@@ -1,0 +1,110 @@
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    var(--bg-card) 0%,
+    var(--bg-card-hover) 50%,
+    var(--bg-card) 100%
+  );
+  background-size: 700px 100%;
+  animation: shimmer 1.4s infinite linear;
+  border-radius: 6px;
+}
+
+@keyframes shimmer {
+  0% { background-position: -700px 0; }
+  100% { background-position: 700px 0; }
+}
+
+/* User Card Skeleton */
+.userCard {
+  background: var(--bg-card);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.lines {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.line {
+  height: 14px;
+  border-radius: 6px;
+}
+
+.lineLg { width: 55%; }
+.lineMd { width: 38%; }
+.lineSm { width: 70%; }
+.lineXl { width: 90%; }
+
+.statsRow {
+  display: flex;
+  gap: 8px;
+}
+
+.statBox {
+  flex: 1;
+  height: 56px;
+  border-radius: var(--radius);
+}
+
+.metaLines {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Repo List Skeleton */
+.repoListWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.repoCard {
+  background: var(--bg-card);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.repoTitle {
+  height: 16px;
+  width: 40%;
+}
+
+.repoDesc {
+  height: 12px;
+  width: 85%;
+}
+
+.repoDescShort {
+  height: 12px;
+  width: 60%;
+}
+
+.repoMeta {
+  display: flex;
+  gap: 16px;
+  margin-top: 4px;
+}
+
+.repoMetaItem {
+  height: 12px;
+  width: 60px;
+}
