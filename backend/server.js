@@ -28,7 +28,7 @@ app.use((req, res) => {
 app.use(errorHandler);
 
 app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
+ console.log(`Server running on port ${PORT}`);
   console.log(`GitHub token: ${process.env.GITHUB_TOKEN ? "configured" : "not set (rate limited)"}`);
 });
 
