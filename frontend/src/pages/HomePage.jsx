@@ -41,10 +41,7 @@ const HomePage = ({ onSearch, loading }) => {
           <div className={styles.searchWrapper}>
             <SearchBar onSearch={onSearch} loading={loading} />
           </div>
-          <p className={styles.subtitle}>
-            Search any GitHub username to instantly view their profile, repositories,
-            language distribution, and contribution history
-          </p>
+          
           
         </div>
 

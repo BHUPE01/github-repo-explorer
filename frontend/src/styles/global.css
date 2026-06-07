@@ -1,14 +1,14 @@
 :root {
   --bg-primary: #000000;
-  --bg-secondary: #0d1117;
-  --bg-card: #161b22;
-  --bg-card-hover: #1c2230;
+  --bg-secondary: #040608;
+  --bg-card: #010205;
+  --bg-card-hover: #010102;
   --bg-input: #0d1117;
-  --border: #21262d;
-  --border-hover: #388bfd;
+  --border: #edeff3;
+  --border-hover: #f7f7f7;
   --text-primary: #e6edf3;
-  --text-secondary: #8b949e;
-  --text-muted: #484f58;
+  --text-secondary: #ffffff;
+  --text-muted: #ffffff;
   --accent: #58a6ff;
   --accent-hover: #79b8ff;
   --accent-dim: rgba(88, 166, 255, 0.12);
@@ -23,7 +23,7 @@
   --font-mono: "Space Mono", monospace;
   --radius: 8px;
   --radius-lg: 12px;
-  --shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0);
   --transition: 0.18s ease;
 }
 
