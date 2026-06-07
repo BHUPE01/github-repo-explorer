@@ -38,9 +38,9 @@ const HomePage = ({ onSearch, loading }) => {
 </h1>
           
 
-          <div className={styles.searchWrapper}>
-            <SearchBar onSearch={onSearch} loading={loading} />
-          </div>
+          <div className={styles.searchWrapper} style={{ margin: "30px" }}>
+  <SearchBar onSearch={onSearch} loading={loading} />
+</div>
           
           
         </div>
