@@ -13,13 +13,13 @@
 }
 
 .card:hover {
-  border-color: rgba(88, 166, 255, 0.4);
+  border-color: rgba(0, 0, 0, 0.973);
   transform: translateY(-1px);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
 .card.expanded {
-  border-color: var(--accent);
+  border-color: white;
 }
 
 .main {
@@ -46,8 +46,8 @@
 
 .name {
   font-size: 15px;
-  font-weight: 700;
-  color: var(--accent);
+  font-weight: 500;
+  color: white;
   display: flex;
   align-items: center;
   gap: 6px;
@@ -58,7 +58,7 @@
 }
 
 .name:hover {
-  color: var(--accent-hover);
+  color: white;
   text-decoration: underline;
 }
 
@@ -75,8 +75,8 @@
   font-size: 11px;
   font-weight: 600;
   border: 1px solid transparent;
-  background: color-mix(in srgb, var(--badge-color) 15%, transparent);
-  color: var(--badge-color);
+  background: black;
+  color: black;
   border-color: color-mix(in srgb, var(--badge-color) 30%, transparent);
   white-space: nowrap;
 }
@@ -96,8 +96,8 @@
 }
 
 .expandBtn:hover {
-  border-color: var(--accent);
-  color: var(--accent);
+  border-color: white;
+  color: black;
   background: var(--accent-dim);
 }
 
@@ -110,8 +110,8 @@
 }
 
 .description {
-  font-size: 13px;
-  color: var(--text-secondary);
+  font-size: 10px;
+  color: white;
   line-height: 1.6;
   display: -webkit-box;
   
@@ -129,23 +129,23 @@
   display: inline-flex;
   align-items: center;
   padding: 2px 10px;
-  background: var(--accent-dim);
-  border: 1px solid rgba(88, 166, 255, 0.2);
+  background: black;
+  border: white;
   border-radius: 20px;
   font-size: 11px;
   font-weight: 600;
-  color: var(--accent);
+  color: white;
 }
 
 .topicMore {
   display: inline-flex;
   align-items: center;
   padding: 2px 10px;
-  background: var(--bg-secondary);
-  border: 1px solid var(--border);
+  background: black;
+  border: 1px white;
   border-radius: 20px;
-  font-size: 11px;
-  color: var(--text-muted);
+  font-size: 10px;
+  color: white;
 }
 
 .meta {
@@ -160,7 +160,7 @@
   align-items: center;
   gap: 5px;
   font-size: 12px;
-  color: var(--text-secondary);
+  color: white;
   font-weight: 600;
 }
 
@@ -176,19 +176,19 @@
   align-items: center;
   gap: 4px;
   font-size: 12px;
-  color: var(--text-secondary);
+  color: white;
   font-family: var(--font-mono);
 }
 
 .statIcon {
-  color: var(--text-muted);
+  color: white;
   display: flex;
   align-items: center;
 }
 
 .updatedAt {
   font-size: 12px;
-  color: var(--text-muted);
+  color: white;
   margin-left: auto;
 }
 
@@ -196,7 +196,7 @@
 .details {
   border-top: 1px solid var(--border);
   padding: 16px 20px;
-  background: var(--bg-secondary);
+  background: black;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -224,14 +224,14 @@
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.07em;
-  color: var(--text-muted);
+  color: white;
   font-weight: 700;
 }
 
 .detailValue {
   font-size: 14px;
-  color: var(--text-primary);
-  font-family: var(--font-mono);
+  color: white;
+  font-family: white;
   font-weight: 600;
 }
 
@@ -241,16 +241,16 @@
   gap: 6px;
   font-size: 13px;
   font-weight: 600;
-  color: var(--accent);
+  color: white;
   align-self: flex-start;
   padding: 6px 14px;
-  background: var(--accent-dim);
-  border: 1px solid rgba(88, 166, 255, 0.25);
+  background: black;
+  border: 1px black;
   border-radius: var(--radius);
   transition: background var(--transition);
 }
 
 .viewOnGithub:hover {
-  background: rgba(88, 166, 255, 0.2);
-  color: var(--accent-hover);
+  background: black;
+  color:white;
 }

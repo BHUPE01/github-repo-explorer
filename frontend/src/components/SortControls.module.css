@@ -6,15 +6,15 @@
 
 .label {
   font-size: 13px;
-  color: var(--text-muted);
-  font-weight: 600;
+  color: white;
+  font-weight: 300;
   white-space: nowrap;
 }
 
 .controls {
   display: flex;
-  background: var(--bg-card);
-  border: 1.5px solid var(--border);
+  background: black;
+  border: 1.5px white;
   border-radius: var(--radius);
   overflow: hidden;
 }
@@ -23,12 +23,12 @@
   background: none;
   border: none;
   border-right: 1px solid var(--border);
-  color: var(--text-secondary);
+  color: white;
   font-family: var(--font-display);
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 300;
   padding: 7px 14px;
-  transition: background var(--transition), color var(--transition);
+  transition: black;
   white-space: nowrap;
 }
 
@@ -38,7 +38,7 @@
 
 .btn:hover:not(.active) {
   background: var(--bg-card-hover);
-  color: var(--text-primary);
+  color: white;
 }
 
 .btn.active {

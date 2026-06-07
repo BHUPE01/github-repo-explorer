@@ -28,19 +28,19 @@
   right: -4px;
   width: 26px;
   height: 26px;
-  background: var(--bg-secondary);
+  background: black;
   border: 1.5px solid var(--border);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--text-secondary);
-  transition: color var(--transition), border-color var(--transition);
+  color: white;
+  transition: color black;
 }
 
 .githubLink:hover {
-  color: var(--accent);
-  border-color: var(--accent);
+  color: white;
+  border-color: white;
 }
 
 .identity {
@@ -51,22 +51,22 @@
 
 .name {
   font-size: 18px;
-  font-weight: 800;
-  color: var(--text-primary);
+  font-weight: 400;
+  color:white;
   letter-spacing: -0.02em;
 }
 
 .login {
   font-size: 14px;
-  color: var(--text-secondary);
-  font-family: var(--font-mono);
+  color: white;
+  font-family: white;
 }
 
 .bio {
   font-size: 13px;
-  color: var(--text-secondary);
+  color: white;
   line-height: 1.6;
-  border-left: 2px solid var(--border);
+  border-left: 2px white;
   padding-left: 10px;
 }
 
@@ -74,8 +74,8 @@
   display: flex;
   align-items: center;
   gap: 0;
-  background: var(--bg-secondary);
-  border: 1px solid var(--border);
+  background: black;
+  border: white;
   border-radius: var(--radius);
   overflow: hidden;
 }
@@ -93,22 +93,22 @@
 .statValue {
   font-size: 16px;
   font-weight: 700;
-  color: var(--text-primary);
+  color: white;
   font-family: var(--font-mono);
 }
 
 .statLabel {
   font-size: 11px;
-  color: var(--text-muted);
+  color: white;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  font-weight: 600;
+  font-weight: 300;
 }
 
 .statDivider {
   width: 1px;
   height: 36px;
-  background: var(--border);
+  background: white;
   flex-shrink: 0;
 }
 
@@ -123,11 +123,11 @@
   align-items: center;
   gap: 8px;
   font-size: 13px;
-  color: var(--text-secondary);
+  color: white;
 }
 
 .metaIcon {
-  color: var(--text-muted);
+  color: white;
   display: flex;
   align-items: center;
   flex-shrink: 0;
