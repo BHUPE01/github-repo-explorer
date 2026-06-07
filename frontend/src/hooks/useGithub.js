@@ -9,10 +9,8 @@ const useGithub = () => {
   const [repos, setRepos] = useState([]);
   const [languages, setLanguages] = useState({});
   const [loading, setLoading] = useState(false);
-  const [reposLoading, setReposLoading] = useState(false);
   const [loadMoreLoading, setLoadMoreLoading] = useState(false);
   const [error, setError] = useState(null);
-  const [hasNextPage, setHasNextPage] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [currentUsername, setCurrentUsername] = useState("");
 
@@ -26,7 +24,6 @@ const useGithub = () => {
     setRepos([]);
     setLanguages({});
     setCurrentPage(1);
-    setHasNextPage(false);
     setCurrentUsername(trimmed);
 
     try {
@@ -36,8 +33,10 @@ const useGithub = () => {
       ]);
 
       setUser(userData);
-      setRepos(reposData.repos);
-      setHasNextPage(reposData.hasNextPage);
+
+      // reposData is already an array
+      setRepos(reposData);
+
       addRecentSearch(trimmed);
 
       getLanguages(trimmed)
@@ -51,29 +50,33 @@ const useGithub = () => {
   }, []);
 
   const loadMore = useCallback(async () => {
-    if (!currentUsername || loadMoreLoading || !hasNextPage) return;
+    if (!currentUsername || loadMoreLoading) return;
 
     setLoadMoreLoading(true);
-    const nextPage = currentPage + 1;
 
     try {
-      const reposData = await getRepos(currentUsername, nextPage, REPOS_PER_PAGE);
-      setRepos((prev) => [...prev, ...reposData.repos]);
-      setHasNextPage(reposData.hasNextPage);
+      const nextPage = currentPage + 1;
+
+      const reposData = await getRepos(
+        currentUsername,
+        nextPage,
+        REPOS_PER_PAGE
+      );
+
+      setRepos((prev) => [...prev, ...reposData]);
       setCurrentPage(nextPage);
     } catch (err) {
       setError(err);
     } finally {
       setLoadMoreLoading(false);
     }
-  }, [currentUsername, currentPage, loadMoreLoading, hasNextPage]);
+  }, [currentUsername, currentPage, loadMoreLoading]);
 
   const reset = useCallback(() => {
     setUser(null);
     setRepos([]);
     setLanguages({});
     setError(null);
-    setHasNextPage(false);
     setCurrentPage(1);
     setCurrentUsername("");
   }, []);
@@ -83,10 +86,8 @@ const useGithub = () => {
     repos,
     languages,
     loading,
-    reposLoading,
     loadMoreLoading,
     error,
-    hasNextPage,
     currentUsername,
     search,
     loadMore,
