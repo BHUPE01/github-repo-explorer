@@ -8,7 +8,7 @@ This project is a full-stack GitHub Repository Explorer built as part of the Stu
 
 ## Live Demo Links
 
-Link : https://vercel.com/bhupe01s-projects/github-repo-explorer
+Link : https://github-repo-explorer-lime.vercel.app/
 
 ---
 
